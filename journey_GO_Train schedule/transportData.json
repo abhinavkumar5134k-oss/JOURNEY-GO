@@ -1,0 +1,64 @@
+{
+  "trains": [
+    {
+      "train_number": "18615",
+      "train_name": "KRIYA YOGA EXPRESS",
+      "type": "Mail/Express",
+      "origin": "HOWRAH JN (HWH)",
+      "destination": "HATIA (HTE)",
+      "distance_km": 423,
+      "duration": "9h 40m",
+      "running_days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "fares": {
+        "1A": 1675,
+        "2A": 1000,
+        "3A": 705,
+        "3E": 650,
+        "SL": 265,
+        "GN": 145
+      },
+      "route": [
+        { "sequence": 1, "station_name": "HOWRAH JN", "station_code": "HWH", "arrival": "Source", "departure": "21:10", "halt_mins": 0, "day": 1 },
+        { "sequence": 2, "station_name": "MECHEDA", "station_code": "MCA", "arrival": "22:03", "departure": "22:08", "halt_mins": 5, "day": 1 },
+        { "sequence": 3, "station_name": "KHARAGPUR JN", "station_code": "KGP", "arrival": "22:55", "departure": "23:00", "halt_mins": 5, "day": 1 },
+        { "sequence": 4, "station_name": "JHARGRAM", "station_code": "JGM", "arrival": "23:34", "departure": "23:36", "halt_mins": 2, "day": 1 },
+        { "sequence": 5, "station_name": "CHAKULIA", "station_code": "CKU", "arrival": "23:57", "departure": "23:59", "halt_mins": 2, "day": 1 },
+        { "sequence": 6, "station_name": "GHATSILA", "station_code": "GTS", "arrival": "00:20", "departure": "00:22", "halt_mins": 2, "day": 2 },
+        { "sequence": 7, "station_name": "TATANAGAR JN", "station_code": "TATA", "arrival": "01:07", "departure": "01:12", "halt_mins": 5, "day": 2 },
+        { "sequence": 8, "station_name": "KANDRA", "station_code": "KND", "arrival": "01:39", "departure": "01:40", "halt_mins": 1, "day": 2 },
+        { "sequence": 9, "station_name": "CHANDIL JN", "station_code": "CNI", "arrival": "02:18", "departure": "02:20", "halt_mins": 2, "day": 2 },
+        { "sequence": 10, "station_name": "TIRALDIH", "station_code": "TUL", "arrival": "02:49", "departure": "02:50", "halt_mins": 1, "day": 2 },
+        { "sequence": 11, "station_name": "SUISA", "station_code": "SSIA", "arrival": "02:59", "departure": "03:00", "halt_mins": 1, "day": 2 },
+        { "sequence": 12, "station_name": "TORANG", "station_code": "TRAN", "arrival": "03:14", "departure": "03:15", "halt_mins": 1, "day": 2 },
+        { "sequence": 13, "station_name": "MURI JN", "station_code": "MURI", "arrival": "04:00", "departure": "04:20", "halt_mins": 20, "day": 2 },
+        { "sequence": 14, "station_name": "TATISILWAI", "station_code": "TIS", "arrival": "05:15", "departure": "05:16", "halt_mins": 1, "day": 2 },
+        { "sequence": 15, "station_name": "NAMKON", "station_code": "NKM", "arrival": "05:25", "departure": "05:26", "halt_mins": 1, "day": 2 },
+        { "sequence": 16, "station_name": "RANCHI JN", "station_code": "RNC", "arrival": "05:40", "departure": "05:50", "halt_mins": 10, "day": 2 },
+        { "sequence": 17, "station_name": "HATIA", "station_code": "HTE", "arrival": "06:50", "departure": "Destination", "halt_mins": 0, "day": 2 }
+      ]
+    }
+  ],
+  "buses": [
+    {
+      "bus_id": "BUS-HWH-RNC-01",
+      "operator_name": "Royal Cruiser",
+      "bus_type": "AC Sealer / Sleeper (2+1)",
+      "origin": "Kolkata (Babughat)",
+      "destination": "Ranchi (Khadgara Bus Stand)",
+      "duration": "11h 00m",
+      "running_days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "fares": {
+        "seater": 650,
+        "sleeper": 900
+      },
+      "route": [
+        { "sequence": 1, "stop_name": "Kolkata (Babughat)", "arrival": "Source", "departure": "19:00" },
+        { "sequence": 2, "stop_name": "Kharagpur", "arrival": "21:45", "departure": "22:00" },
+        { "sequence": 3, "stop_name": "Baharagora", "arrival": "23:30", "departure": "23:35" },
+        { "sequence": 4, "stop_name": "Jamshedpur (Mango Bus Stand)", "arrival": "01:30", "departure": "01:45" },
+        { "sequence": 5, "stop_name": "Chowka", "arrival": "02:45", "departure": "02:47" },
+        { "sequence": 6, "stop_name": "Ranchi (Khadgara)", "arrival": "06:00", "destination": "Destination" }
+      ]
+    }
+  ]
+}

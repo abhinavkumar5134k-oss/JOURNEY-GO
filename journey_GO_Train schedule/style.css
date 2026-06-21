@@ -1,0 +1,73 @@
+body{
+    margin:0;
+    padding:30px;
+    background:#f5f7fa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    color:#0b5394;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin:20px 0;
+}
+
+input{
+    width:300px;
+    padding:12px;
+    font-size:16px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    cursor:pointer;
+    background:#0b5394;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+#trainInfo{
+    margin:20px 0;
+    font-size:18px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#0b5394;
+    color:white;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}

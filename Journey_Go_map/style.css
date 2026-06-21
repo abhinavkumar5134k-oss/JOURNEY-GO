@@ -1,0 +1,252 @@
+
+/* Ensure the map takes the full screen and no white borders exist */
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+#map { 
+    height: 100vh; 
+    width: 100vw; 
+    z-index: 1; 
+}
+
+/* Floating Search Bar Styling */
+.search-container {
+    position: absolute;
+    top: 20px;
+    left: 60px; /* Pushed right so it doesn't cover the +/- zoom buttons */
+    z-index: 1000; /* Keeps it above the map */
+    background: rgba(255, 255, 255, 0.95);
+    padding: 6px 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 180px;
+    background: transparent;
+    font-family: sans-serif;
+}
+
+.search-container button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide the default Leaflet Routing Machine white directions box */
+.leaflet-routing-container { 
+    display: none !important; 
+}
+/* ==========================================
+   1. BASE & MAP STYLES
+   ========================================== */
+body, html { 
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%; 
+    overflow: hidden; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#map { 
+    height: 100vh; 
+    width: 100vw; 
+    z-index: 1; 
+}
+
+/* Hide default Leaflet Routing Machine white directions box */
+.leaflet-routing-container { 
+    display: none !important; 
+}
+
+/* ==========================================
+   2. FLOATING SEARCH BAR
+   ========================================== */
+.search-container {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 6px 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 180px;
+    background: transparent;
+    font-family: inherit;
+}
+
+.search-container button {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================
+   3. MAP MARKERS & POPUPS
+   ========================================== */
+.dark-icon-bg {
+    font-size: 18px; 
+    line-height: 1; 
+    text-align: center; 
+    background: white; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+    width: 30px; 
+    height: 30px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.custom-map-label {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+/* ==========================================
+   4. UI PANELS (Trip Planner, Navigation, Trains)
+   ========================================== */
+.ui-panel {
+    background: white; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: 280px;
+}
+
+.ui-panel h3 {
+    margin: 0 0 10px 0; 
+    color: #1a73e8; 
+    font-size: 15px; 
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 5px;
+}
+
+.ui-panel input {
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+
+.ui-panel button {
+    width: 100%; 
+    background: #1a73e8; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: bold;
+}
+
+.ui-panel button:hover {
+    background: #1557b0;
+}
+
+/* Specific Panel Adjustments */
+.turn-by-turn-panel {
+    max-height: 250px; 
+    overflow-y: auto;
+    width: 250px;
+}
+
+.train-panel {
+    width: 260px;
+}
+
+.train-panel table {
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: left;
+}
+
+/* ==========================================
+   5. TRIP RESULT CARDS
+   ========================================== */
+.results-container {
+    background: #f4f6f8; 
+    padding: 10px; 
+    border-radius: 6px; 
+    border: 1px solid #dcdde1; 
+    max-height: 250px; 
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.transport-card {
+    padding: 8px; 
+    background: white; 
+    margin-bottom: 8px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 0 4px 4px 0;
+}
+
+/* Border colors for different modes */
+.card-walk { border-left: 4px solid #27ae60; }
+.card-toto { border-left: 4px solid #f39c12; }
+.card-metro { border-left: 4px solid #2980b9; }
+.card-ferry { border-left: 4px solid #16a085; }
+.card-bus { border-left: 4px solid #8e44ad; }
+.card-cab { border-left: 4px solid #3498db; }
+.card-train { border-left: 4px solid #c0392b; cursor: pointer; transition: background 0.2s;}
+.card-train:hover { background: #fafafa; }
+
+/* Locate Me Button */
+.locate-btn {
+    background: white;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/* Ensure tracks appear on top and have distinct colors */
+.railway-line {
+    transition: opacity 0.3s;
+}
+.railway-line:hover {
+    opacity: 1 !important;
+    stroke-width: 8 !important;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trackmate - Virtual Assistant</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <div id="localWeatherPill" class="weather-pill" title="Detecting local weather...">
+        <span id="localWeatherIcon">⏳</span>
+        <span id="localWeatherTemp">--°C</span>
+    </div>
+
+    <div id="chatFab" class="chat-fab" title="Toggle Trackmate AI">
+        <span id="fabIcon">🤖</span>
+    </div>
+
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            Trackmate AI Assistant
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">Hello! I am Trackmate. I can check the weather or answer business queries. Ask me anything!</div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="userInput" placeholder="Ask Trackmate...">
+            <button id="clearBtn" title="Clear Chat">🗑️</button>
+            <button id="micBtn" type="button" title="Toggle Voice Input">🎤</button>
+            <button id="sendBtn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="/static/js/weather.js"></script>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>

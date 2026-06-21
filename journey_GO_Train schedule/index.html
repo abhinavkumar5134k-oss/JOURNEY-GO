@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚆 Indian Train Schedule Dashboard</h1>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="trainNo"
+            placeholder="Enter Train Number (e.g. 12936)"
+        >
+
+        <button onclick="getTrainSchedule()">
+            Search
+        </button>
+    </div>
+
+    <div id="trainInfo"></div>
+
+    <table id="scheduleTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Station</th>
+                <th>Code</th>
+                <th>Arrival</th>
+                <th>Departure</th>
+                <th>Day</th>
+                <th>Distance (km)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
